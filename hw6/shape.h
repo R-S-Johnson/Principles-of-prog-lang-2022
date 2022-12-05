@@ -10,7 +10,7 @@ class shape {
     public:
     shape *next;
 
-    Shape (string type, string color, Point loc);
+    shape (string type, string color, point loc);
 
     virtual void print_color (void);
 

@@ -1,16 +1,15 @@
 class point {
-    private:
+    public:
     double x, y, z;
 
-    public:
-    Point () {}
-    Point (double x, double y, double z) { set (x, y, z); }
+    point () {}
+    point (double x, double y, double z) { set (x, y, z); }
 
-    void set (double x, double y, double z);
+    inline void set (double x, double y, double z);
 
     double length ();
 
-    Point operator- (Point& p);
+    point operator- (point& p);
 
     void print (void);
 };
